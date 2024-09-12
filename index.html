@@ -53,6 +53,10 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 	<link rel="icon" type="image/png" href="images/theme/favicon.png">
 
+	<!-- Icon library
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
@@ -62,16 +66,37 @@
 
 	<!-- Sticky header -->
 	<div class="sticky">
-		<div class="nav-container">
-			<p class="inline-text">
-				<img src="images/client/client-logo.png" alt="Lancaster" class="inline-logo">
-				<span class="title">Housing Production Plan 2024-2029</span>
-			</p>
-			<div class="navbar">
-				<a href="#Overview">Back to top</a> | <a href="#Goals">Goals</a> | <a href="#Housing needs">Housing needs</a> | <a href="#Strategies">Strategies</a>
+		<div class="topnav">
+			<div class="logo-and-menu">
+				<p class="inline-text">
+					<img src="images/client/client-logo.png" alt="Community" class="inline-logo">
+					<span class="title">Housing Production Plan 2024-2029</span>
+				</p>
+				<div class="nav-options">
+					<div class="desktop-pages">
+						<!-- Links must be added here for desktop -->
+						<a href="#Overview">Back to top</a>
+						<a href="#Goals">Goals</a>
+						<a href="#Housing needs">Housing needs</a>
+						<a href="#Strategies">Strategies</a>
+					</div>
+					<div id="clickDiv" class="mobile-menu-icon">
+						<a class="menu-icon">
+							<i class="fa fa-bars"></i>
+						</a>
+					</div>
+				</div>				
+			</div>
+			<div id="targetDiv" class="">
+				<!-- Links must be added here again for mobile -->
+				<a href="#Overview">Back to top</a>
+				<a href="#Goals">Goals</a>
+				<a href="#Housing needs">Housing needs</a>
+				<a href="#Strategies">Strategies</a>
 			</div>
 		</div>
 	</div>
+
 
 	<!-- Cover banner -->
 
@@ -399,7 +424,8 @@
 
 			</div>
 			<div class="six columns" style="margin-top: 2%">
-				<p><img src="./images/client/strategy5.jpg" class="image-cover" height=250 width=100% title="CommunityScale" alt="CommunityScale"></p>
+				<p><a target="_blank" rel="noopener noreferrer nofollow" href="https://drive.google.com/file/d/13Dt8iQzsFWSXinOYw11M0D9ARxPvyuLK/view?usp=sharing"><img src="./images/client/strategy5.jpg" class="image-cover" height=250 width=100% title="CommunityScale" alt="CommunityScale"></a></p>
+				<p><a target="_blank" rel="noopener noreferrer nofollow" href="https://drive.google.com/file/d/13Dt8iQzsFWSXinOYw11M0D9ARxPvyuLK/view?usp=sharing">Access a high resolution map of Town-owned property</a>				</p>
 			</div>
 		</div>
 
@@ -470,7 +496,7 @@
 		</div>
 	</div>
 
-
+	<script type="text/javascript" src="nav-javascript.js"></script>
 
 	<!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
